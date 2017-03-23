@@ -339,11 +339,11 @@ if ( ! function_exists( 'storefront_post_header' ) ) {
 		<header class="entry-header">
 		<?php
 		if ( is_single() ) {
-			storefront_posted_on();
+			// storefront_posted_on();
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
 			if ( 'post' == get_post_type() ) {
-				storefront_posted_on();
+				// storefront_posted_on();
 			}
 
 			the_title( sprintf( '<h2 class="alpha entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );

@@ -29,6 +29,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+
+
 <?php
 do_action( 'storefront_sidebar' );
 get_footer();

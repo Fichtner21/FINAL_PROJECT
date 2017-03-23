@@ -88,9 +88,9 @@ if ( ! function_exists( 'storefront_product_search' ) ) {
 	 */
 	function storefront_product_search() {
 		if ( storefront_is_woocommerce_activated() ) { ?>
-			<div class="site-search">
+			<!-- <div class="site-search">
 				<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
-			</div>
+			</div> -->
 		<?php
 		}
 	}

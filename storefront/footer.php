@@ -34,6 +34,22 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<?php
+// Verifying whether a cookie is set or not
+if(!isset($_COOKIE["animation"])){
 
+?>
+
+<div class="animation">
+	<div class="logobackground">
+		<!-- <div class="fromup"></div> -->
+			<img class="logopoler" src="<?php bloginfo('template_url');?>/logopoler.png">
+		<!-- <div class="fromdown"></div> -->
+	</div>
+</div>
+<?php
+}
+?>
+<script src="<?php bloginfo( 'template_url' );?>/assets/js/intro.js"></script>
 </body>
 </html>

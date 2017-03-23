@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var sassGlob = require('gulp-sass-glob');
 
   gulp.task('sass',function(){
-    return gulp.src('assets/sass/**/*.scss')
+    return gulp.src('main.scss')
     .pipe(sourcemaps.init()) //załadowanie sourcemaps
     .pipe(sassGlob())
     .pipe(sass({
@@ -16,5 +16,5 @@ var sassGlob = require('gulp-sass-glob');
 });
 
 gulp.task('watch',['sass'], function(){
-  gulp.watch('assets/sass/**/*.scss',['sass']);
+  gulp.watch('assets/sass/animation/*.scss',['sass']);
 });
