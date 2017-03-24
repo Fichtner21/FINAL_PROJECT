@@ -38,27 +38,43 @@
 <?php wp_footer(); ?>
 <?php
 // Verifying whether a cookie is set or not
-if(!isset($_COOKIE["animation"])){
+// if(!isset($_COOKIE["animation"])){
 
 ?>
 
 <div class="animation">
 	<div class="logobackground">
-		<div class="logopoler"><img src="<?php bloginfo('template_url');?>/logopoler.png">
-			<div class="typewriter">
-				<h1>Przepraszam za tak słabą prezentację</h1>
-			</div></div>
 
+		<div class="logopoler"><img src="<?php bloginfo('template_url');?>/logopoler.png">
+
+			<div class="typewriter">
+				<h1>Mycie, Czyszczenie, Renowacja</h1>
+
+			</div>
+
+		</div>
+		<div class="s1"><img src="<?php bloginfo('template_url');?>/szorowarka.png"></div>
+		<div class="m1"><img src="<?php bloginfo('template_url');?>/myjka1.png"></div>
+		<div class="o1"><img src="<?php bloginfo('template_url');?>/odkurzacz.png"></div>
 	</div>
 
 </div>
 
 <?php
-}
+// }
 ?>
 <div class="szor"><img src="<?php bloginfo('template_url');?>/szorowarka.png"></div>
 <div class="myjka"><img src="<?php bloginfo('template_url');?>/myjka1.png"></div>
 <div class="odkurzacz"><img src="<?php bloginfo('template_url');?>/odkurzacz.png"></div>
+<audio class="vacum">
+	<source src="<?php bloginfo('template_url');?>/vacum.mp3"  type="audio/mp3">
+</audio>
+<audio class="scrubber">
+	<source src="<?php bloginfo('template_url');?>/scrubber.mp3"  type="audio/mp3">
+</audio>
+<audio class="washer">
+	<source src="<?php bloginfo('template_url');?>/washer.mp3"  type="audio/mp3">
+</audio>
 <script src="<?php bloginfo( 'template_url' );?>/assets/js/intro.js"></script>
 </body>
 </html>

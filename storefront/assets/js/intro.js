@@ -34,7 +34,7 @@
   });
 
   $('.cat-item a').each(function(){
-    console.log($(this).attr('data-text', $(this).text()));
+  $(this).attr('data-text', $(this).text());
   })
 
 var body = $(document);
@@ -43,48 +43,65 @@ var btnm = $('.btnmyjka');
 var btno = $('.btnodkurzacz');
 console.log(btnm);
 
-
+var scrubber = document.querySelector('.scrubber');
 
 button.on('click', function(){
   body.on('mousemove', function(sz){
       $('.szor').css({
          left:  sz.pageX+3,
+         top:   sz.pageY+3, //utworz osobna klase z display none;
+      });
+  });
+  $('.szor').toggleClass('vis');
+  function playScrubber(){
+    if(scrubber.paused){
+      scrubber.play();
+    }else{
+      scrubber.pause();
+    }
+  }
+  playScrubber();
+});
+
+var washer = document.querySelector('.washer');
+
+btnm.on('click', function(){
+  body.on('mousemove', function(sz){
+      $('.myjka').css({
+         left:  sz.pageX+3,
+         top:   sz.pageY+3, //utworz osobna klase z display none;
+      });
+  });
+  $('.myjka').toggleClass('vis');
+  function playWasher(){
+    if(washer.paused){
+      washer.play();
+    }else{
+      washer.pause();
+    }
+  }
+  playWasher();
+});
+
+var vacum = document.querySelector('.vacum');
+
+btno.on('click', function(){
+  body.on('mousemove', function(sz){
+      $('.odkurzacz').css({
+         left:  sz.pageX+3,
          top:   sz.pageY+3
       });
   });
+  $('.odkurzacz').toggleClass('vis');
+  function playVacum(){
+    if(vacum.paused){
+      vacum.play();
+    }else{
+      vacum.pause();
+    }
+  }
+  playVacum();
 });
-
-btnm.each(function(){
-  $(this).on('click', function(){
-    body.on('mousemove', function(sz){
-        $('.myjka').css({
-           left:  sz.pageX+3,
-           top:   sz.pageY+3
-        });
-    });
-  });
-});
-
-// btnm.on('click', function(){
-//   body.on('mousemove', function(sz){
-//       $('.myjka').css({
-//          left:  sz.pageX+3,
-//          top:   sz.pageY+3
-//       });
-//   });
-// });
-//
-// btno.on('click', function(){
-//   body.on('mousemove', function(sz){
-//       $('.odkurzacz').css({
-//          left:  sz.pageX+3,
-//          top:   sz.pageY+3
-//       });
-//   });
-// });
-//
-
-
 
 
 

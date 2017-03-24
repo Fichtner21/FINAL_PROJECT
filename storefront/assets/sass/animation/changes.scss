@@ -137,14 +137,39 @@
 .szor {
   position: absolute;
   z-index: 99999999999999999999;
+  display: none;
 }
 
 .myjka {
   position: absolute;
   z-index: 99999999999999999999;
+  display: none;
 }
 
 .odkurzacz {
   position: absolute;
   z-index: 99999999999999999999;
+  display: none;
+}
+
+.s1 {
+  position: absolute;
+  z-index: 99999999999999999999;
+  margin-left: -140px;
+}
+
+.m1 {
+  position: absolute;
+  z-index: 99999999999999999999;
+  margin-left: 1px;
+}
+
+.o1 {
+  position: absolute;
+  z-index: 99999999999999999999;
+  margin-left: 100px;
+}
+
+.vis {
+  display: block;
 }
